@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 
 const restaurantReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case GET_RESTAUANT:
+        case GET_RESTAURANT:
             return {
                 ...state,
                 restaurants: action.payload,

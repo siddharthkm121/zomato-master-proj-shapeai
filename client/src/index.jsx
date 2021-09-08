@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { Provider } from "react-redux";
 
-import store from "./Redux/store";
+import Store from "./Redux/store";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

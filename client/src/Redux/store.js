@@ -8,8 +8,8 @@ const middlewares = [thunk]
 if (process.env.NODE_ENV === "dvelopment") {
     const { logger } = require("redux-logger");
 
-    middlewares.push(loggeer);
+    middlewares.push(logger);
 }
-const store = createstore(rootReducer, { applyMiddlewares(...middlewares) });
+const store = createStore(rootReducer, {}, applyMiddleware(...middlewares));
 
 export default store;

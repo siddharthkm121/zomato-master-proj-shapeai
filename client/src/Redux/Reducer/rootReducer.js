@@ -1,6 +1,8 @@
+
 import { combineReducers } from "redux";
 
 import restaurant from "./restaurant/restaurant.reducer";
-const store = createStore();
+import image from "./Image/Image.reducer";
+const rootReducer = combineReducers({ restaurant, image });
 
-export default store;
+export default rootReducer;
